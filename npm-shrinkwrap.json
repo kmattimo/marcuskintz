@@ -4,8 +4,7 @@
   "dependencies": {
     "async": {
       "version": "0.9.2",
-      "from": "https://registry.npmjs.org/async/-/async-0.9.2.tgz",
-      "resolved": "https://registry.npmjs.org/async/-/async-0.9.2.tgz"
+      "from": "async@https://registry.npmjs.org/async/-/async-0.9.2.tgz"
     },
     "cloudinary": {
       "version": "1.2.2",
@@ -26,8 +25,7 @@
     },
     "dotenv": {
       "version": "1.2.0",
-      "from": "https://registry.npmjs.org/dotenv/-/dotenv-1.2.0.tgz",
-      "resolved": "https://registry.npmjs.org/dotenv/-/dotenv-1.2.0.tgz"
+      "from": "dotenv@https://registry.npmjs.org/dotenv/-/dotenv-1.2.0.tgz"
     },
     "express-handlebars": {
       "version": "1.2.2",
@@ -41,7 +39,7 @@
           "dependencies": {
             "inflight": {
               "version": "1.0.4",
-              "from": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
+              "from": "inflight@^1.0.4",
               "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.4.tgz",
               "dependencies": {
                 "wrappy": {
@@ -53,7 +51,7 @@
             },
             "inherits": {
               "version": "2.0.1",
-              "from": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz",
+              "from": "inherits@2",
               "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
             },
             "minimatch": {
@@ -165,6 +163,11 @@
           }
         }
       }
+    },
+    "inherits": {
+      "version": "2.0.1",
+      "from": "inherits@",
+      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
     },
     "keystone": {
       "version": "0.3.12",
@@ -2678,11 +2681,6 @@
                           "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.1.tgz"
                         }
                       }
-                    },
-                    "inherits": {
-                      "version": "2.0.1",
-                      "from": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz",
-                      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
                     },
                     "minimatch": {
                       "version": "2.0.10",
@@ -6507,8 +6505,7 @@
     },
     "underscore": {
       "version": "1.8.3",
-      "from": "https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz",
-      "resolved": "https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz"
+      "from": "underscore@https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz"
     }
   }
 }
