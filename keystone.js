@@ -12,7 +12,7 @@ if(process.env.VCAP_SERVICES) {
 	console.log('found appfog mongo');
 	var env = JSON.parse(process.env.VCAP_SERVICES);
 	console.log(env);
-	var mongo = env['mongodb-1.8'][0]['credentials'];
+	var mongo = env['mongodb2-2.4.8'][0]['credentials'];
 	var mongoStr;
 
 	if(mongo.username && mongo.password){
