@@ -2,9 +2,36 @@
 // customising the .env file in your project's root folder.
 require('dotenv').load();
 
+
+
 // Require keystone
 var keystone = require('keystone');
 var handlebars = require('express-handlebars');
+
+if(process.env.VCAP_SERVICES) {
+	console.log('found appfog mongo');
+	var env = JSON.parse(process.env.VCAP_SERVICES);
+	console.log(env);
+	var mongo = env['mongodb-1.8'][0]['credentials'];
+	var mongoStr;
+
+	if(mongo.username && mongo.password){
+       		mongoStr = "mongodb://" + mongo.username + ":" + mongo.password + "@" + mongo.hostname + ":" + mongo.port + "/" + mongo.db;
+    	}
+    	else{
+        	mongoStr = "mongodb://" + mongo.hostname + ":" + mongo.port + "/" + mongo.db;
+    	}
+	console.log(mongoStr);
+	keystone.set('mongo' , mongoStr);
+	}
+
+else {
+	
+	console.log('not on appfog');
+	}
+
+console.log(test);
+console.log('Keystone env: ' + keystone.get('env'));
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
