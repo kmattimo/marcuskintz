@@ -30,7 +30,6 @@ else {
 	console.log('not on appfog');
 	}
 
-console.log(test);
 console.log('Keystone env: ' + keystone.get('env'));
 
 // Initialise Keystone with your project's configuration.
