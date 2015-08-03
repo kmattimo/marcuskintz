@@ -12,8 +12,8 @@ var handlebars = require('express-handlebars');
 
 keystone.init({
 
-	'name': 'marcuskintz',
-	'brand': 'marcuskintz',
+	'name': 'marcus',
+	'brand': 'marcus',
 	
 	'sass': 'public',
 	'static': 'public',
@@ -35,7 +35,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'User',
-	'cookie secret': 'udU8hm9Ub{tNGn,Nr&%pLmGhsp9_L-*?*W=A%p_|c;hb!R~DGwewF1uUCsO>:Ft/'
+	'cookie secret': 'hi+g}BxUz1Bu0;A{iuR,6^w1sZ*9l*,9he+}rc|"u2Dkcu+mC$sNZTK4)r7W(ZX9'
 
 });
 

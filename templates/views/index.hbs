@@ -1,21 +1,48 @@
 {{!< default}}
 <div class="container">
-	<div class="jumbotron"><img src="/images/logo.svg" width="160">
-		<h1>Welcome</h1>
-		<p>This is your new <a href='http://keystonejs.com', target='_blank'>KeystoneJS</a> website.</p>
-		<p>
-			It includes the latest versions of
-			<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		</p>
-		<p>Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.</p>
-		<hr>
-		<p>We have created a default Admin user for you with the email <strong>no</strong> and the password <strong>no</strong>.</p>
-		<p><a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use the Admin UI.</p>
-		<hr>
-		<p>
-			Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
-		</p>
+	<div class="row">
+			
+		<div class="col s12 m6">
+			<div class="card grey lighten-2 z-depth-3">
+				<div class="card-image">
+				<img class="responsive-img" src="http://placehold.it/400x500">
+				</div>
+				<button class="btn-flat left blue lighten-1 "><- </button>   <button class="btn right blue lighten-1">-> </button>
+			</div>
+		</div>	
+			
+		<div class="col s12 m6 ">
+			<div class="card-panel blue lighten-2 info-right z-depth-3">
+		
+		
+		
+			<table class="bordered centered">
+				<tbody>
+					{{# each stats}}
+						
+						<tr> 
+							<td> {{name}} </td> <td> {{value}}   </td>
+						
+						</tr>
+					{{/each}}
+				</tbody>
+				
+			</table>
+			
+			
+			</div>
+		</div>		
+			
+				
 	</div>
+	 
+	<div class="row">
+		<div class="col s12 m6">
+			
+			<img class="responsive-img" src="http://placehold.it/400x600">
+			
+		</div>	
+	</div>
+
 </div>
+

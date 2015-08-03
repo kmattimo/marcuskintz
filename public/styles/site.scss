@@ -3,7 +3,8 @@
 
 // Bootstrap can be removed entirely by deleting this line.
 
-@import "bootstrap/bootstrap";
+// "bootstrap/bootstrap";
+@import "../sass/materialize";
 
 // The easiest way to customise Bootstrap variables while
 // being able to easily override the source files with new
@@ -12,7 +13,7 @@
 // You can also add your own custom variables to this file for
 // use in your site stylesheets.
 
-@import "site/variables";
+//rt "site/variables";
 
 
 // Site Styles
