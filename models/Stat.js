@@ -16,5 +16,5 @@ Stat.add({
 	hidden: {type: Boolean, default:false}
 });
 
-Stat.defaultColums ='name, value'
+Stat.defaultColums ='name, value';
 Stat.register();
