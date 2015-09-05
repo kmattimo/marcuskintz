@@ -14,7 +14,8 @@ var Profile = new keystone.List('Profile', {
 Profile.add({
 	SiteTitle: { type: String, default:"Marcus Kintz- Athletic Profile" },
 	SiteHeader: { type: String, default:"Marcus Kintz- Athletic Profile" },
-	Statement: { type: Types.Textarea }
+	Statement: { type: Types.Textarea },
+	videoID: { type:String }
 });
 
 Profile.register();

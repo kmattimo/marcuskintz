@@ -14,10 +14,19 @@ exports = module.exports = function(req, res) {
 			if(err) console.error(err);
 			locals.stats = stats;
 			
-			view.render('index');
+			Profile.model.find().exec(function(err, userData) {
+				if(err) console.error(err);
+				locals.userData = userData[0];
+				
+				console.log(userData);
+					view.render('index');
+				
+			});
+			
+			// view.render('index');
 		});
 	
-};
+
 
 Profile = keystone.list('Profile');
 Profile.model.find()
@@ -39,3 +48,7 @@ Profile.model.find()
         //catch the error, it can be thrown by any promise in the chain
         console.log(err);
     });
+		
+
+
+};
